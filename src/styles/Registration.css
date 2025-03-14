@@ -1,0 +1,24 @@
+body {
+    font-family: "Arial", sans-serif;
+    position: relative; /* Needed for the ::before pseudo-element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+    z-index: -1; /* Ensures the overlay is behind the content */
+}
+
+body {
+    background: url('https://images.ctfassets.net/pg6xj64qk0kh/2r4QaBLvhQFH1mPGljSdR9/39b737d93854060282f6b4a9b9893202/camden-paces-apartments-buckhead-ga-terraces-living-room-with-den_1.jpg') no-repeat center center/cover;
+}
